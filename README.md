@@ -1,1 +1,1 @@
-# assistance_request
+# Приём заявок открыт!
