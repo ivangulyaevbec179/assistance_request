@@ -1,0 +1,131 @@
+\documentclass[a4paper, 12pt]{scrreprt} 
+
+    \usepackage{cmap}
+    \usepackage{graphicx} 
+    \usepackage{wrapfig}
+    \usepackage{lastpage}
+    \usepackage{tikz}
+    \usepackage{pgfplots}
+    \usepackage{braket}
+    \usepackage{verbatim}
+    \usetikzlibrary{arrows}
+    \usetikzlibrary{calc,positioning,fit,backgrounds}
+    \usetikzlibrary{decorations.pathreplacing,calc}
+    \usepackage{amsmath} 
+    \usepackage{color}
+    \usepackage[T2A]{fontenc}
+    \usepackage[utf8]{inputenc}	
+    \usepackage[english,russian]{babel}
+    \usepackage{geometry} 
+    \geometry{top=25mm}
+    \geometry{bottom=25mm}
+    \geometry{left=16mm}
+    \geometry{right=16mm}	
+    \usepackage{amssymb}
+    \usepackage{icomma} 
+    \usepackage{mathtext} 
+    \usepackage{mathrsfs}
+    \usepackage{mathtools}
+    \usepackage{fancyhdr}
+    \usepackage{mdframed}
+    \newmdenv[
+  topline=false,
+  bottomline=false,
+  skipabove=\topsep,
+  skipbelow=\topsep,
+  leftmargin=20pt,
+  rightmargin=20pt,
+  innertopmargin=0pt,
+  innerbottommargin=0pt
+]{siderules}
+    %\pagestyle{fancy}
+    %\fancyhf{}
+    %\renewcommand{\headrulewidth}{0,04mm}
+    \usepackage{mathtext} 
+    \usepackage{multicol}
+    %\rhead{\scshape{BEC 171}}
+    %\lhead{\scshape{Research seminar for research stream}}
+    %\chead{} 
+    \cfoot{\thepage} 
+    
+    \makeatletter 
+    \renewcommand{\headrulewidth}{0,4mm} 
+    %ЦВЕТА
+    \newcommand{\blue}[1]{\textcolor[rgb]{.3,.3,.5}{#1}}
+    \newcommand{\ot}[1]{\textcolor[rgb]{.55,.55,.65}{#1}}
+    \newcommand{\oq}[1]{\textcolor[rgb]{.6,.6,.6}{#1}}
+
+    \renewcommand{\maketitle}{\noindent{\bfseries\scshape\LARGE\blue\@title}\par
+        \noindent {\large\scshape\bfseries\@subtitle}\par
+        \noindent {\slshape\mdseries\oq\@author}
+        \vskip 2ex}
+
+    \renewcommand\section{\@startsection{section}{1}{\z@}%
+        {-3.5ex \@plus -1ex \@minus -.2ex}%
+        {-1em}%
+        {\normalfont\large\slshape\bfseries\ot}}
+    \makeatother
+
+    \usepackage{color,hyperref}
+\definecolor{darkblue}{rgb}{0.0,0.0,0.3}
+\hypersetup{colorlinks,breaklinks,
+            linkcolor=darkblue,urlcolor=darkblue,
+            anchorcolor=darkblue,citecolor=darkblue}
+
+    \newcommand\doilink[1]{\href{http://dx.doi.org/#1}{#1}}
+    \newcommand\doi[1]{doi:\doilink{#1}}
+    \providecommand*\url[1]{\href{#1}{#1}}
+    \renewcommand*\url[1]{\href{#1}{\texttt{#1}}}
+    \providecommand*\email[1]{\href{mailto:#1}{#1}}
+        
+    \renewcommand{\labelitemi}{$\diamond$}
+
+    \author{Ассистенство на самом крутом курсе :)}
+    \title{Мотивационное письмо}
+
+\begin{document}
+\maketitle
+\pagestyle{empty} 
+
+\section*{Почему я хочу быть ассистентом на курсе по теории вероятностей и математической статистике?}~\
+
+Несколько доводов:
+\begin{itemize}
+    \item Во-первых, как мне кажется, это лучший математический курс на нашей программе. Нас учили не заучивать алгоритмы, чтобы решать простейшие задачи, а понимать, что происходит в этом мире. 
+    \item Во-вторых, мне понравилось быть учебным ассистентом на <<Микроэкономике -- 1>> для исследовательского потока. Я проверяла домашние работы, составляла задачи, которые в них входили, помогала наблюдать за первокурсниками во время написания промежуточной контрольной.
+    \item В-третьих, команда преподавателей по теории вероятностей кажется наиболее привлекательной с точки зрения работы с ними. 
+\end{itemize}
+
+\section*{А почему именно тервер, а не микра?}~\
+
+Мне понравилось взаимодействие между студентами, ассистентами и преподавателями. До безумия я полюбила теорию вероятностей! :) В первую очередь хочется помочь замечательным преподавателям в организации, проведении контрольных, в каком-то смысле отблагодарить их за то, что дисциплина была такой замечательной!
+
+Помимо этого, мне нравится объяснять людям разный материал, преподавать, а это входит в обязанности учебных ассистентов по терверу. Особенно сильно мне нравится объяснять математику!
+
+\section*{Про меня :)}~\
+
+Вообще меня многие называют лягушкой (один мой одногруппник), но у меня есть имя! Настоящее, человеческое.
+
+\begin{center}
+    \begin{tabular}{ll}
+        \hline
+        \hline
+        Имя, отчество, фамилия: & \href{https://vk.com/mmmlsl}{Яна Николаевна Коротова} \\
+        Группа: & БЭК 171 \\
+        Оценка по теории вероятностей: & 10 \\
+        \hline
+        R: & не знаю, но регрессии, например, умею строить \\
+        Python: & прослушала несколько курсов на DataCamp \\
+        Latex: & вроде нормасик \\
+        \hline
+        Номер телефона: & +7 (977) 346 42 86 \\
+        E-mail: & \email{yanankorotova@gmail.com} \\
+        Telegram: & \href{https://t.me/mmmlsl}{mmmlsl} \\
+        \hline
+        \hline
+    \end{tabular}
+\end{center}
+
+В заключение хочу поделиться с прекрасным благороднейшим Доном Пуассоном ссылкой на одно \href{https://rutube.ru/video/12d4c39005a0f29901c25aa28122db3c/}{видео}, смотреть которое я никак не могу перестать :)
+
+\end{document}
