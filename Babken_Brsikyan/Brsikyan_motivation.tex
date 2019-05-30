@@ -1,0 +1,83 @@
+\documentclass[11pt,a4paper,oneside]{report} % добавить leqno в [] для нумерации слева
+
+%%% Работа с русским языком
+\usepackage{cmap}					% поиск в PDF
+\usepackage{mathtext} 				% русские буквы в формулах
+\usepackage[T2A]{fontenc}			% кодировка
+\usepackage[utf8]{inputenc}			% кодировка исходного текста
+\usepackage[english,russian]{babel}	% локализация и переносы
+
+
+
+%%% Дополнительная работа с математикой
+\usepackage{amsmath,amsfonts,amssymb,amsthm,mathtools} % AMS
+\usepackage{icomma} % "Умная" запятая: $0,2$ --- число, $0, 2$ --- перечисление
+
+%% Номера формул
+\mathtoolsset{showonlyrefs=true} % Показывать номера только у тех формул, на которые есть \eqref{} в тексте.
+
+%% Шрифты
+\usepackage{euscript}	 % Шрифт Евклид
+\usepackage{mathrsfs} % Красивый матшрифт
+
+%% Свои команды
+\DeclareMathOperator{\sgn}{\mathop{sgn}}
+
+%% Перенос знаков в формулах (по Львовскому)
+\newcommand*{\hm}[1]{#1\nobreak\discretionary{}
+{\hbox{$\mathsurround=0pt #1$}}{}}
+
+
+\usepackage{setspace}
+\onehalfspacing
+
+\usepackage{pgf,tikz,pgfplots}
+\pgfplotsset{compat=1.3}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+
+\begin{document}
+	\begin{center}
+		\textbf{\large Мотивационное письмо будущего (возможно) ассистента}
+	\end{center} 
+	\begin{flushleft}
+		\begin{verse}
+			"Деятельность человека бесплодна и ничтожна, когда не воодушевлена высокою идеею." 
+		\end{verse}
+	\end{flushleft}
+    \begin{flushright}
+		$  \textcopyright$ Чернышевский Н.Г.
+    \end{flushright}
+
+Свое мотивационное письмо хотелось бы начать с того, что Теория вероятностей для меня является безумно увлекательным предметом, которым постоянно хочется делиться с окружающими людьми. Этот предмет является интересным и применимым на практике во всех сферах деятельности. Как говорил мне отец: "Сынок, учи тервер, он пригодится".
+
+Будучи опытным человеком в провождениях консультаций (проводил полгода консультации по линейной алгебре), могу уверенно сказать, что данной деятельностью мне очень нравится заниматься и я готов тратить много времени на нее. 
+
+Теория вероятностей - необходимый предмет для моей деятельности и ассистенство не даст мне забыть о нем. Таким образом, я помогу и себе, и людям, которым буду проводить консультации. 
+
+Раз уж начал свое мотивационное письмо с цитаты, предпочитаю и закончить цитатой моего Благородного наставника:
+	\begin{flushleft}
+	\begin{verse}
+		"Бабкен, ты похож чем-то на меня. У тебя все получится!" 
+	\end{verse}
+	\end{flushleft}
+	\begin{flushright}
+	$  \textcopyright$ Зехов Матвей
+	\end{flushright}
+
+	\begin{center}
+		\textbf{\large Мои Данные}
+	\end{center} 
+	\begin{enumerate}
+		\item Брсикян Бабкен Араевич
+		\item Группа Бэк 171
+		\item Оценка: 8
+		\item Владею языками программирования R, Python на хорошем уровне. Умею работать на tex.
+		\item Телефон: 8(926)725-01-11\\
+		Почта: brsikyanbabken99@gmail.com\\
+		Телеграм канал: @brsikyanbabken\\
+		Номер галактики в Тентуре не имею, потому что живу в Антитентуре
+		
+	\end{enumerate}
+
+\end{document}
