@@ -1,0 +1,84 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english, russian]{babel}
+\usepackage{better_poster}
+\usepackage{multicol}
+\usepackage{amsmath, amssymb}
+\usepackage{lipsum}
+\usepackage{vwcol}  
+\usepackage[T1]{fontenc}
+\usepackage[normalem]{ulem}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\graphicspath{{./images/}}
+\usepackage{tikz}
+\usepackage[export]{adjustbox}
+\renewcommand{\familydefault}{\sfdefault}
+\definecolor{b}{rgb}{70, 130, 180}
+
+% sets page numbering off
+\pagenumbering{gobble}
+
+\newcommand\postermargin{1cm}
+% set margins
+\usepackage[margin=\postermargin, top=0cm, bottom=0cm]{geometry}
+
+% authors
+\title{\fontfamily{fos}\selectfont Мотивационное письмо}
+
+\begin{document}
+
+% fill with the main point of your study
+\makefinding{\fontfamily{fos}\selectfont
+\textbf{Одна ошибка и ты ошибся}}
+
+\noindent
+\parbox[t][0.6\paperheight][t]{0.49\linewidth}{%
+
+    {\let\newpage\relax\maketitle}
+    
+    \raggedcolumns
+    \section{Обо мне}
+    \begin{tabular}{cl}
+         \diamond & Махнева Елизавета Александровна\\[1mm]
+         \diamond & БЭК171 \\[1mm]
+         \diamond & Оценка по теории вероятности: 10 \\
+    \end{tabular}
+    
+    \section{Что я умею}
+    \begin{tabular}{clr}
+         \diamond & \sout{ничего} Python & \blacksquare \blacksquare \blacksquare \square \square\\[1mm]
+         \diamond & \LaTeX & \blacksquare \blacksquare \blacksquare \square \square \\[1mm]
+         \diamond & R & \blacksquare \square \square \square \square \\[1mm]
+         \diamond & VBA & \blacksquare \blacksquare \blacksquare \blacksquare \square \\[1mm]
+         \diamond & git & \blacksquare \square \square \square \square \\[1mm]
+         \diamond & Кубик Рубика & 3 $\times$ 3 $\times$ 3 \\[1mm]
+         \diamond & Не пить чай &\\
+    \end{tabular}
+}
+\hfill\begin{tikzpicture}[overlay]
+\draw[CadetBlue, very thick] (0,0.01\paperheight) -- (0,-0.63\paperheight);
+\end{tikzpicture}
+\hfill
+\parbox[t][0.6\paperheight][t]{0.45\linewidth}{
+    \vspace*{0.5cm}
+    \section{Почему я хочу быть \\ ассистентом?}
+    
+    {\begin{flushright}
+    \includegraphics[width=0.5\linewidth]{hmm.png}
+    \end{flushright}
+    \vspace*{1cm}
+    \begin{tabular}{p{0.01cm}p{8cm}}
+         & Хочу, чтобы в моей жизни было в 2 раза больше праздников\\[2mm]
+         & Хочу тусить с другими ассистентами на контрольных \\[2mm]
+         & Так мне точно придется выучить матстат \\[2mm]
+         & У меня будет свободный доступ к ракеткам для бадминтона и кубикам Рубика \\[2mm]
+         & Хочу быть частью самой нескучной и душевной кафедры эконома \\[2mm]
+    \end{tabular}
+    }
+}
+
+% footer
+\makefooter{kuku.png}
+
+\end{document}
